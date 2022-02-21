@@ -15,6 +15,11 @@ It works with one or two monitors and various GNOME extensions.
 
     nohup conky -c ~/.conkyrc &
 
+## Example Screenshot
+
+![Example Screenshot, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS152.jpeg "GNOME 15.2 Desktop Example")
+
+
 ## Reference/Variables
 
 See <http://conky.sourceforge.net/variables.html>
