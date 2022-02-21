@@ -3,9 +3,10 @@
 # Conky Configfile for openSUSE
 
 The conky configfile `conky-osl.conf` was developed and adjusted for conky running on openSUSE 15.x under the GNOME desktop manager.
+Not yet tested under other Linux distributions or other desktop environments.
 Written and copyright by Ralph Roth, ROSE SWE, <http://rose.rult.at/>
 
-It works with one or two monitors and various GNOME extensions.
+It works with one or two monitors and various GNOME extensions. It is designed for dark wallpapers/backgrounds.
 
 ## Setup/Installation
 
@@ -18,7 +19,6 @@ It works with one or two monitors and various GNOME extensions.
 ## Example Screenshot
 
 ![Example Screenshot, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS152.jpeg "GNOME 15.2 Desktop Example")
-
 
 ## Reference/Variables
 
@@ -34,4 +34,4 @@ All tested conky versions so far
     # openSUSE 15.2
     conky-1.11.5-1.20.x86_64
 
-<!-- $Id: README.md,v 1.1 2022/02/21 06:17:41 ralph Exp $ -->
+<!-- $Id: README.md,v 1.2 2022/02/21 06:57:58 ralph Exp $ -->
