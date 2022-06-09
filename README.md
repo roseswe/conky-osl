@@ -26,12 +26,14 @@ See <http://conky.sourceforge.net/variables.html>
 
 ## Tested Conky Versions
 
-All tested conky versions so far
+All tested conky versions so far tested on the following platforms
 
     $ rpm -q conky
     # openSUSE 15.1
     conky-1.11.6-pm151.8.17.x86_64, conky-1.11.6-pm151.8.22.x86_64, conky-1.11.6-pm151.8.27.x86_64, conky-1.11.6-pm151.8.37.x86_64 
     # openSUSE 15.2
     conky-1.11.5-1.20.x86_64
+    # openSUSE 15.3 and SLES 15.3/SLES-for-SAP Application 15.3
+    conky-1.11.5-1.20.x86_64
 
-<!-- $Id: README.md,v 1.2 2022/02/21 06:57:58 ralph Exp $ -->
+<!-- $Id: README.md,v 1.3 2022/06/09 09:21:40 ralph Exp $ -->
