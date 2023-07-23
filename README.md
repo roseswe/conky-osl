@@ -26,7 +26,7 @@ This configuration file is designed for use with one or two monitors and various
 
     nohup conky -c ~/.conkyrc &
 
-GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - click "+" sign and select conky from the list
+GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - click "+" sign and select conky from the list (must be running)
 
 ## Example Screenshot
 
@@ -41,6 +41,7 @@ See <http://conky.sourceforge.net/variables.html>
 All tested conky versions so far tested on the following platforms
 
     $ rpm -q conky
+
     # openSUSE Leap 15.1
     conky-1.11.6-pm151.8.17.x86_64, conky-1.11.6-pm151.8.22.x86_64,
     conky-1.11.6-pm151.8.27.x86_64, conky-1.11.6-pm151.8.37.x86_64
@@ -48,10 +49,12 @@ All tested conky versions so far tested on the following platforms
     conky-1.11.5-1.20.x86_64
     # openSUSE Leap 15.3, 15.4 and SLES 15.3/SLES-for-SAP Application 15.3
     conky-1.11.5-1.20.x86_64
-    # openSUSE Tumbleweed (06/2023)
-    conky-1.13.1-3.2.x86_64
+    conky-1.13.1-150400.10.pm.22.x86_64  (Pakman)
+    conky-1.13.1-150400.10.pm.28.x86_64, conky-1.13.1-150400.10.pm.31.x86_64, conky-1.13.1-150400.10.pm.32.x86_64  (Pakman)
+    # openSUSE Tumbleweed
+    conky-1.13.1-3.2.x86_64  (06/2023)
     # Debian 12.0, LXDE Desktop
     conky-1.18.3 (i686)
 
 
-<!-- $Id: README.md,v 1.8 2023/06/23 06:06:10 ralph Exp $ -->
+<!-- $Id: README.md,v 1.11 2023/07/20 17:20:41 ralph Exp $ -->
