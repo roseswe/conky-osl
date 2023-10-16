@@ -20,11 +20,13 @@ This configuration file is designed for use with one or two monitors and various
 
 ## Setup/Installation
 
-    cp conky-osl.conf ~/.conkyrc
+    cp conky-osl.conf ~/.conkyrc                        ## old style
+
+    cp conky-osl.conf ~/.config/conky/conky.conf        ## new style, works with openSUSE Leap 15.5
 
 ## Running Conky
 
-    nohup conky -c ~/.conkyrc &
+    nohup conky -c ~/.conkyrc &                         ## old style
 
 GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - click "+" sign and select conky from the list (must be running)
 
@@ -49,12 +51,14 @@ All tested conky versions so far tested on the following platforms
     conky-1.11.5-1.20.x86_64
     # openSUSE Leap 15.3, 15.4 and SLES 15.3/SLES-for-SAP Application 15.3
     conky-1.11.5-1.20.x86_64
-    conky-1.13.1-150400.10.pm.22.x86_64  (Pakman)
-    conky-1.13.1-150400.10.pm.28.x86_64, conky-1.13.1-150400.10.pm.31.x86_64, conky-1.13.1-150400.10.pm.32.x86_64  (Pakman)
+    conky-1.13.1-150400.10.pm.22.x86_64 (Pakman), conky-1.13.1-150400.10.pm.28.x86_64, conky-1.13.1-150400.10.pm.31.x86_64, conky-1.13.1-150400.10.pm.32.x86_64  (Pakman)
+    conky-1.13.1-150400.11.pm.1.x86_64
+    # openSUSE Leap 15.5
+    conky-1.11.5-1.20.x86_64
     # openSUSE Tumbleweed
     conky-1.13.1-3.2.x86_64  (06/2023)
     # Debian 12.0, LXDE Desktop
     conky-1.18.3 (i686)
 
 
-<!-- $Id: README.md,v 1.11 2023/07/20 17:20:41 ralph Exp $ -->
+<!-- $Id: README.md,v 1.14 2023/10/16 09:43:55 ralph Exp $ -->
