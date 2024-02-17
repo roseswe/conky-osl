@@ -24,15 +24,20 @@ This configuration file is designed for use with one or two monitors and various
 
     cp conky-osl.conf ~/.config/conky/conky.conf        ## new style, works with openSUSE Leap 15.5
 
+## Network Monitoring
+
+The network statistics are currently hard coded (eth0), So if you have an other interface you must adapt this to your environment!
+
 ## Running Conky
 
     nohup conky -c ~/.conkyrc &                         ## old style
 
 GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - click "+" sign and select conky from the list (must be running)
 
-## Example Screenshot
+## Example Screenshots
 
-![Example Screenshot, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS152.jpeg "GNOME 15.2 Desktop Example")
+![Example Screenshot 1, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS152.jpeg "GNOME 15.2 Desktop Example (Dark Background)")
+![Example Screenshot 2, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS155.png "GNOME 15.5 Desktop Example (Blue Background)")
 
 ## Reference/Variables
 
@@ -61,4 +66,4 @@ All tested conky versions so far tested on the following platforms
     conky-1.18.3 (i686)
 
 
-<!-- $Id: README.md,v 1.14 2023/10/16 09:43:55 ralph Exp $ -->
+<!-- $Id: README.md,v 1.15 2024/02/17 22:00:49 ralph Exp $ -->
