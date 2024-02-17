@@ -1,0 +1,32 @@
+Changelog
+=========
+
+
+1.1.0 (2024-02-17)
+------------------
+
+Changes
+~~~~~~~
+- Updated documentation, newer conky versions. [roseswe]
+- Reformated. [roseswe]
+- Added Debian 12/LXDE. [roseswe]
+- Tested under OS TW and KDE, documented results. [roseswe]
+- Change spaces, added 10th CPU line. [roseswe]
+- Small enhancements for SLES 15.3. [roseswe]
+- Enhanced the readme. [roseswe]
+
+Fix
+~~~
+- Blured picture :-) [roseswe]
+
+Other
+~~~~~
+- :sparkles: add: Network graphs added. [roseswe]
+- :sparkles: add network graphs. [roseswe]
+- Add: newer conky versions documented. [roseswe]
+- Update README.md. [Ralph Roth]
+
+  Added example screenshot to the readme
+- Added: Example Screenshot. [roseswe]
+
+
