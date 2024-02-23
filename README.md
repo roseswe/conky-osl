@@ -1,6 +1,6 @@
 <!-- vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab: -->
 
-# Conky: A versatile system monitor
+# Conky: A versatile system monitor for your Desktop
 
 ## Introduction
 
@@ -22,11 +22,12 @@ This configuration file is designed for use with one or two monitors and various
 
     cp conky-osl.conf ~/.conkyrc                        ## old style
 
-    cp conky-osl.conf ~/.config/conky/conky.conf        ## new style, works with openSUSE Leap 15.5
+    mkdir -p ~/.config/conky
+    cp conky-osl.conf ~/.config/conky/conky.conf        ## new style, works with openSUSE Leap 15.5 conky version
 
 ## Network Monitoring
 
-The network statistics are currently hard coded (eth0), So if you have an other interface you must adapt this to your environment!
+The network statistics are currently hard coded (eth0). So if you have an other interface you must adapt (e.g sed) this to your environment!
 
 ## Running Conky
 
@@ -66,4 +67,4 @@ All tested conky versions so far tested on the following platforms
     conky-1.18.3 (i686)
 
 
-<!-- $Id: README.md,v 1.15 2024/02/17 22:00:49 ralph Exp $ -->
+<!-- $Id: README.md,v 1.16 2024/02/22 20:17:50 ralph Exp $ -->
