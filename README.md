@@ -27,7 +27,7 @@ This configuration file is designed for use with one or two monitors and various
 
 ## Network Monitoring
 
-The network statistics are currently hard coded (eth0). So if you have an other interface you must adapt (e.g sed) this to your environment!
+The network statistics are currently hard coded (eth0). So if you have an other interface you must adapt (e.g sed) this to your environment! For a quick fix we provide the shell script "chg_lan.sh" that changes eth0 to your first available interface. The script creates a new file `conky-osl-fixedlan.conf` that can be used.
 
 ## Running Conky
 
@@ -67,4 +67,4 @@ All tested conky versions so far tested on the following platforms
     conky-1.18.3 (i686)
 
 
-<!-- $Id: README.md,v 1.16 2024/02/22 20:17:50 ralph Exp $ -->
+<!-- $Id: README.md,v 1.19 2024/03/08 12:47:34 ralph Exp $ -->
