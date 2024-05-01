@@ -25,9 +25,17 @@ This configuration file is designed for use with one or two monitors and various
     mkdir -p ~/.config/conky
     cp conky-osl.conf ~/.config/conky/conky.conf        ## new style, works with openSUSE Leap 15.5 conky version
 
+    ./chg_lan.sh                                        ## automatic setup with version 1.2++
+
+Example chg_lan.sh run:
+
+    $ ./chg_lan.sh
+    Found interface enxd09466f5977f
+
+
 ## Network Monitoring
 
-The network statistics are currently hard coded (eth0). So if you have an other interface you must adapt (e.g sed) this to your environment! For a quick fix we provide the shell script "chg_lan.sh" that changes eth0 to your first available interface. The script creates a new file `conky-osl-fixedlan.conf` that can be used.
+The network statistics are currently hard coded (eth0). So if you have an other interface you must adapt (e.g sed) this to your environment! For a quick fix we provide the shell script `chg_lan.sh` that changes eth0 to your first available interface. The script creates a new file `conky-osl-fixedlan.conf` that can be used. The created script will be automatically be copied to the conky config file folder.
 
 ## Running Conky
 
@@ -65,6 +73,8 @@ All tested conky versions so far tested on the following platforms
     conky-1.13.1-3.2.x86_64  (06/2023)
     # Debian 12.0, LXDE Desktop
     conky-1.18.3 (i686)
+    # Zorin 17.1
+    conky-1.12.2-1
 
 
-<!-- $Id: README.md,v 1.19 2024/03/08 12:47:34 ralph Exp $ -->
+<!-- $Id: README.md,v 1.21 2024/03/29 17:34:43 ralph Exp $ -->
