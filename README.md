@@ -52,6 +52,8 @@ GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - cli
 
 See <http://conky.sourceforge.net/variables.html>
 
+Tricks and Tips <https://wiki.archlinux.org/title/Conky/Tips_and_tricks>
+
 ## Tested Conky Versions
 
 All tested conky versions so far tested on the following platforms
@@ -71,10 +73,13 @@ All tested conky versions so far tested on the following platforms
     conky-1.11.5-1.20.x86_64
     # openSUSE Tumbleweed
     conky-1.13.1-3.2.x86_64  (06/2023)
-    # Debian 12.0, LXDE Desktop
+
+    $ dpkg -l conky|grep conky
+
+    # Debian 12.0-12.5, LXDE Desktop
     conky-1.18.3 (i686)
     # Zorin 17.1
     conky-1.12.2-1
 
 
-<!-- $Id: README.md,v 1.21 2024/03/29 17:34:43 ralph Exp $ -->
+<!-- $Id: README.md,v 1.24 2024/08/28 09:18:45 ralph Exp $ -->
