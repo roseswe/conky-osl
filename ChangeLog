@@ -4,7 +4,19 @@ Changelog
 
 (unreleased)
 ------------
+
+Changes
+~~~~~~~
+- Documentation and minor code enhancements. [roseswe]
+- Zorin 17.1/chg_lan.sh. [roseswe]
+
+Other
+~~~~~
+- Add: Temperature, DiskIO, enhanced dox chg: Nicer colors. [roseswe]
+- Add: small helper script for NIC other than eth0. [roseswe]
+- Upd: Changelog updated. [roseswe]
 - Dox: Small enhancements like mkdir. [roseswe]
+- Add/chg: gitignore. [roseswe]
 - Add: Added Changelog. [roseswe]
 
 
