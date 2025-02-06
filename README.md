@@ -1,4 +1,4 @@
-<!-- vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab: -->
+<!==> vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab: ==>>
 
 # Conky: A versatile system monitor for your Desktop
 
@@ -47,7 +47,7 @@ GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - cli
 
 ## Example Screenshots
 
-![Example Screenshot 1, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS152.jpeg "GNOME 15.2 Desktop Example (Dark Background)")
+![Example Screenshot 1, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleZorinOS172.jpg "GNOME/ZorinOS Desktop Example (Dark Background)")
 ![Example Screenshot 2, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleOS155.png "GNOME 15.5 Desktop Example (Blue Background)")
 
 ## Reference/Variables
@@ -91,39 +91,40 @@ All tested conky versions so far tested on the following platforms
 ## Color Gradients
 Here's a list of color gradients suitable for dark backgrounds, with hex codes:
 
-${cpugraph 40,320 2F4F4F 98FB98 s -t -l} -- Dark Slate Gray to Pale Green
-${cpugraph 40,320 2F4F4F 4682B4 s -t -l} -- Dark Slate Gray to Steel Blue
-${cpugraph 40,320 FFD700 FFA07A s -t -l} -- Gold to Light Salmon
-${cpugraph 40,320 FF8C00 FFA500 s -t -l} -- Dark Orange to Orange
-${cpugraph 40,320 FFD700 FF4500 s -t -l} -- Gold to Orange Red
-${cpugraph 40,320 4B0082 DA70D6 s -t -l} -- Indigo to Orchid
-${cpugraph 40,320 008080 00FFFF s -t -l} -- Teal to Cyan
-${cpugraph 40,320 8B4513 DEB887 s -t -l} -- Saddle Brown to Burlywood
-${cpugraph 40,320 483D8B B0E0E6 s -t -l} -- Dark Slate Blue to Powder Blue
-${cpugraph 40,320 800080 FF00FF s -t -l} -- Purple to Magenta
+    ${cpugraph 40,320 2F4F4F 98FB98 s -t -l} ==> Dark Slate Gray to Pale Green
+    ${cpugraph 40,320 2F4F4F 4682B4 s -t -l} ==> Dark Slate Gray to Steel Blue
+    ${cpugraph 40,320 FFD700 FFA07A s -t -l} ==> Gold to Light Salmon
+    ${cpugraph 40,320 FF8C00 FFA500 s -t -l} ==> Dark Orange to Orange
+    ${cpugraph 40,320 FFD700 FF4500 s -t -l} ==> Gold to Orange Red
+    ${cpugraph 40,320 4B0082 DA70D6 s -t -l} ==> Indigo to Orchid
+    ${cpugraph 40,320 008080 00FFFF s -t -l} ==> Teal to Cyan
+    ${cpugraph 40,320 8B4513 DEB887 s -t -l} ==> Saddle Brown to Burlywood
+    ${cpugraph 40,320 483D8B B0E0E6 s -t -l} ==> Dark Slate Blue to Powder Blue
+    ${cpugraph 40,320 800080 FF00FF s -t -l} ==> Purple to Magenta
 
-${cpugraph 40,320 FFFFFF FFD700 s -t -l} -- White to Gold
-${cpugraph 40,320 FFFACD FFD700 s -t -l} -- Lemon Chiffon to Gold
-${cpugraph 40,320 FFFFFF FFE4C4 s -t -l} -- White to Bisque
-${cpugraph 40,320 FFFACD FFFFFF s -t -l} -- Lemon Chiffon to White
-${cpugraph 40,320 FFF8DC FFD700 s -t -l} -- Cornsilk to Gold
-${cpugraph 40,320 FFFFF0 FFDAB9 s -t -l} -- Ivory to Peach Puff
-${cpugraph 40,320 FFFFFF FFEBCD s -t -l} -- White to Blanched Almond
-${cpugraph 40,320 F0FFF0 FFD700 s -t -l} -- Honeydew to Gold
-${cpugraph 40,320 FFFFFF FFF0F5 s -t -l} -- White to Lavender Blush
-${cpugraph 40,320 FFFACD FFE4E1 s -t -l} -- Lemon Chiffon to Misty Rose
+    ${cpugraph 40,320 FFFFFF FFD700 s -t -l} ==> White to Gold
+    ${cpugraph 40,320 FFFACD FFD700 s -t -l} ==> Lemon Chiffon to Gold
+    ${cpugraph 40,320 FFFFFF FFE4C4 s -t -l} ==> White to Bisque
+    ${cpugraph 40,320 FFFACD FFFFFF s -t -l} ==> Lemon Chiffon to White
+    ${cpugraph 40,320 FFF8DC FFD700 s -t -l} ==> Cornsilk to Gold
+    ${cpugraph 40,320 FFFFF0 FFDAB9 s -t -l} ==> Ivory to Peach Puff
+    ${cpugraph 40,320 FFFFFF FFEBCD s -t -l} ==> White to Blanched Almond
+    ${cpugraph 40,320 F0FFF0 FFD700 s -t -l} ==> Honeydew to Gold
+    ${cpugraph 40,320 FFFFFF FFF0F5 s -t -l} ==> White to Lavender Blush
+    ${cpugraph 40,320 FFFACD FFE4E1 s -t -l} ==> Lemon Chiffon to Misty Rose
 
 Here's a list of cpugraph settings with higher contrast, suitable for dark backgrounds:
-${cpugraph 40,320 000000 FFFFFF s -t -l} -- Black to White
-${cpugraph 40,320 000000 FFD700 s -t -l} -- Black to Gold
-${cpugraph 40,320 000080 00FFFF s -t -l} -- Navy to Cyan
-${cpugraph 40,320 8B0000 FF69B4 s -t -l} -- Dark Red to Hot Pink
-${cpugraph 40,320 006400 7FFF00 s -t -l} -- Dark Green to Chartreuse
-${cpugraph 40,320 4B0082 FF00FF s -t -l} -- Indigo to Magenta
-${cpugraph 40,320 191970 87CEFA s -t -l} -- Midnight Blue to Light Sky Blue
-${cpugraph 40,320 8B4513 FFA500 s -t -l} -- Saddle Brown to Orange
-${cpugraph 40,320 2F4F4F 00FF7F s -t -l} -- Dark Slate Gray to Spring Green
-${cpugraph 40,320 800080 FFFF00 s -t -l} -- Purple to Yellow
+
+    ${cpugraph 40,320 000000 FFFFFF s -t -l} ==> Black to White
+    ${cpugraph 40,320 000000 FFD700 s -t -l} ==> Black to Gold
+    ${cpugraph 40,320 000080 00FFFF s -t -l} ==> Navy to Cyan
+    ${cpugraph 40,320 8B0000 FF69B4 s -t -l} ==> Dark Red to Hot Pink
+    ${cpugraph 40,320 006400 7FFF00 s -t -l} ==> Dark Green to Chartreuse
+    ${cpugraph 40,320 4B0082 FF00FF s -t -l} ==> Indigo to Magenta
+    ${cpugraph 40,320 191970 87CEFA s -t -l} ==> Midnight Blue to Light Sky Blue
+    ${cpugraph 40,320 8B4513 FFA500 s -t -l} ==> Saddle Brown to Orange
+    ${cpugraph 40,320 2F4F4F 00FF7F s -t -l} ==> Dark Slate Gray to Spring Green
+    ${cpugraph 40,320 800080 FFFF00 s -t -l} ==> Purple to Yellow
 
 
 These combinations provide strong contrast and should be highly visible on dark backgrounds.
@@ -131,31 +132,31 @@ These combinations provide strong contrast and should be highly visible on dark 
 Here are 10 fitting default_colors for Conky on dark backgrounds:
 
 Light Blue: #ADD8E6
-Sky Blue: #87CEEB
-Pale Cyan: #AFEEEE
-Powder Blue: #B0E0E6
-Steel Blue: #4682B4
-Slate Gray: #708090
-Cornflower Blue: #6495ED
-Cadet Blue: #5F9EA0
-Light Steel Blue: #B0C4DE
-Medium Turquoise: #48D1CC
+    Sky Blue: #87CEEB
+    Pale Cyan: #AFEEEE
+    Powder Blue: #B0E0E6
+    Steel Blue: #4682B4
+    Slate Gray: #708090
+    Cornflower Blue: #6495ED
+    Cadet Blue: #5F9EA0
+    Light Steel Blue: #B0C4DE
+    Medium Turquoise: #48D1CC
 
 These colors provide good readability and visual appeal on dark backgrounds, offering a range of blue and gray tones that contrast nicely with dark themes.
 
 Here's a list of 10 default colors for Conky that lean more towards white, while still providing good contrast on dark backgrounds:
 
-White Smoke: #F5F5F5
-Ghost White: #F8F8FF
-Snow: #FFFAFA
-Ivory: #FFFFF0
-Floral White: #FFFAF0
-Alice Blue: #F0F8FF
-Lavender: #E6E6FA
-Azure: #F0FFFF
-Mint Cream: #F5FFFA
-Honeydew: #F0FFF0
+    White Smoke: #F5F5F5
+    Ghost White: #F8F8FF
+    Snow: #FFFAFA
+    Ivory: #FFFFF0
+    Floral White: #FFFAF0
+    Alice Blue: #F0F8FF
+    Lavender: #E6E6FA
+    Azure: #F0FFFF
+    Mint Cream: #F5FFFA
+    Honeydew: #F0FFF0
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!-- $Id: README.md,v 1.26 2025/01/19 19:00:59 ralph Exp $ -->
+<!==> $Id: README.md,v 1.27 2025/02/06 22:07:25 ralph Exp $ ==>>
