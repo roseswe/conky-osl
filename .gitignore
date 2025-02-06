@@ -2,3 +2,4 @@
 .vscode/settings.json
 .vscode/spellright.dict
 conky-osl-fixedlan.conf
+2cpu.sh

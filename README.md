@@ -39,6 +39,8 @@ The network statistics are currently hard coded (eth0). So if you have an other 
 
 ## Running Conky
 
+Make sure you have the correct font installed. See `font = 'DejaVu Sans Mono:size=8',`
+
     nohup conky -c ~/.conkyrc &                         ## old style
 
 GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - click "+" sign and select conky from the list (must be running)
@@ -67,19 +69,93 @@ All tested conky versions so far tested on the following platforms
     conky-1.11.5-1.20.x86_64
     # openSUSE Leap 15.3, 15.4 and SLES 15.3/SLES-for-SAP Application 15.3
     conky-1.11.5-1.20.x86_64
-    conky-1.13.1-150400.10.pm.22.x86_64 (Pakman), conky-1.13.1-150400.10.pm.28.x86_64, conky-1.13.1-150400.10.pm.31.x86_64, conky-1.13.1-150400.10.pm.32.x86_64  (Pakman)
+    conky-1.13.1-150400.10.pm.22.x86_64 (Pakman), conky-1.13.1-150400.10.pm.28.x86_64, conky-1.13.1-150400.10.pm.31.x86_64, conky-1.13.1-150400.10.pm.32.x86_64 (Pakman)
     conky-1.13.1-150400.11.pm.1.x86_64
     # openSUSE Leap 15.5
     conky-1.11.5-1.20.x86_64
-    # openSUSE Tumbleweed
-    conky-1.13.1-3.2.x86_64  (06/2023)
+    # openSUSE Tumbleweed/15.6
+    TW: conky-1.13.1-3.2.x86_64  (06/2023)
+    15.6: 1.13.1-150600.11.pm.8
 
     $ dpkg -l conky|grep conky
 
-    # Debian 12.0-12.5, LXDE Desktop
+    # Debian 12.0-12.5/12.9, LXDE Desktop
     conky-1.18.3 (i686)
-    # Zorin 17.1
+    # ZorinOS 17.1/ZorinOS 17.2
     conky-1.12.2-1
 
+## Todo/Open/Fixme/Issues
 
-<!-- $Id: README.md,v 1.24 2024/08/28 09:18:45 ralph Exp $ -->
+- warning: `conky' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+
+## Color Gradients
+Here's a list of color gradients suitable for dark backgrounds, with hex codes:
+
+${cpugraph 40,320 2F4F4F 98FB98 s -t -l} -- Dark Slate Gray to Pale Green
+${cpugraph 40,320 2F4F4F 4682B4 s -t -l} -- Dark Slate Gray to Steel Blue
+${cpugraph 40,320 FFD700 FFA07A s -t -l} -- Gold to Light Salmon
+${cpugraph 40,320 FF8C00 FFA500 s -t -l} -- Dark Orange to Orange
+${cpugraph 40,320 FFD700 FF4500 s -t -l} -- Gold to Orange Red
+${cpugraph 40,320 4B0082 DA70D6 s -t -l} -- Indigo to Orchid
+${cpugraph 40,320 008080 00FFFF s -t -l} -- Teal to Cyan
+${cpugraph 40,320 8B4513 DEB887 s -t -l} -- Saddle Brown to Burlywood
+${cpugraph 40,320 483D8B B0E0E6 s -t -l} -- Dark Slate Blue to Powder Blue
+${cpugraph 40,320 800080 FF00FF s -t -l} -- Purple to Magenta
+
+${cpugraph 40,320 FFFFFF FFD700 s -t -l} -- White to Gold
+${cpugraph 40,320 FFFACD FFD700 s -t -l} -- Lemon Chiffon to Gold
+${cpugraph 40,320 FFFFFF FFE4C4 s -t -l} -- White to Bisque
+${cpugraph 40,320 FFFACD FFFFFF s -t -l} -- Lemon Chiffon to White
+${cpugraph 40,320 FFF8DC FFD700 s -t -l} -- Cornsilk to Gold
+${cpugraph 40,320 FFFFF0 FFDAB9 s -t -l} -- Ivory to Peach Puff
+${cpugraph 40,320 FFFFFF FFEBCD s -t -l} -- White to Blanched Almond
+${cpugraph 40,320 F0FFF0 FFD700 s -t -l} -- Honeydew to Gold
+${cpugraph 40,320 FFFFFF FFF0F5 s -t -l} -- White to Lavender Blush
+${cpugraph 40,320 FFFACD FFE4E1 s -t -l} -- Lemon Chiffon to Misty Rose
+
+Here's a list of cpugraph settings with higher contrast, suitable for dark backgrounds:
+${cpugraph 40,320 000000 FFFFFF s -t -l} -- Black to White
+${cpugraph 40,320 000000 FFD700 s -t -l} -- Black to Gold
+${cpugraph 40,320 000080 00FFFF s -t -l} -- Navy to Cyan
+${cpugraph 40,320 8B0000 FF69B4 s -t -l} -- Dark Red to Hot Pink
+${cpugraph 40,320 006400 7FFF00 s -t -l} -- Dark Green to Chartreuse
+${cpugraph 40,320 4B0082 FF00FF s -t -l} -- Indigo to Magenta
+${cpugraph 40,320 191970 87CEFA s -t -l} -- Midnight Blue to Light Sky Blue
+${cpugraph 40,320 8B4513 FFA500 s -t -l} -- Saddle Brown to Orange
+${cpugraph 40,320 2F4F4F 00FF7F s -t -l} -- Dark Slate Gray to Spring Green
+${cpugraph 40,320 800080 FFFF00 s -t -l} -- Purple to Yellow
+
+
+These combinations provide strong contrast and should be highly visible on dark backgrounds.
+
+Here are 10 fitting default_colors for Conky on dark backgrounds:
+
+Light Blue: #ADD8E6
+Sky Blue: #87CEEB
+Pale Cyan: #AFEEEE
+Powder Blue: #B0E0E6
+Steel Blue: #4682B4
+Slate Gray: #708090
+Cornflower Blue: #6495ED
+Cadet Blue: #5F9EA0
+Light Steel Blue: #B0C4DE
+Medium Turquoise: #48D1CC
+
+These colors provide good readability and visual appeal on dark backgrounds, offering a range of blue and gray tones that contrast nicely with dark themes.
+
+Here's a list of 10 default colors for Conky that lean more towards white, while still providing good contrast on dark backgrounds:
+
+White Smoke: #F5F5F5
+Ghost White: #F8F8FF
+Snow: #FFFAFA
+Ivory: #FFFFF0
+Floral White: #FFFAF0
+Alice Blue: #F0F8FF
+Lavender: #E6E6FA
+Azure: #F0FFFF
+Mint Cream: #F5FFFA
+Honeydew: #F0FFF0
+
+These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
+
+<!-- $Id: README.md,v 1.26 2025/01/19 19:00:59 ralph Exp $ -->
