@@ -73,9 +73,10 @@ All tested conky versions so far tested on the following platforms
     conky-1.13.1-150400.11.pm.1.x86_64
     # openSUSE Leap 15.5
     conky-1.11.5-1.20.x86_64
-    # openSUSE Tumbleweed/15.6
+    # openSUSE Tumbleweed/Slowroll
     TW: conky-1.13.1-3.2.x86_64  (06/2023)
     15.6: 1.13.1-150600.11.pm.8
+    SR: conky-1.21.7-1.2.x86_64 (02/25)
 
     $ dpkg -l conky|grep conky
 
@@ -87,6 +88,7 @@ All tested conky versions so far tested on the following platforms
 ## Todo/Open/Fixme/Issues
 
 - warning: `conky' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+- VMs may not display the CPU core temperature at all
 
 ## Color Gradients
 Here's a list of color gradients suitable for dark backgrounds, with hex codes:
@@ -131,7 +133,7 @@ These combinations provide strong contrast and should be highly visible on dark 
 
 Here are 10 fitting default_colors for Conky on dark backgrounds:
 
-Light Blue: #ADD8E6
+    Light Blue: #ADD8E6
     Sky Blue: #87CEEB
     Pale Cyan: #AFEEEE
     Powder Blue: #B0E0E6
@@ -159,4 +161,4 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.27 2025/02/06 22:07:25 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.29 2025/02/08 00:02:43 ralph Exp $ ==>>

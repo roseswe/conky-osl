@@ -11,7 +11,7 @@
 # to your first available interface.
 
 LANIF=$(ip a show | grep "state UP" | awk {'print $2;'} | tr -d ":" | head -1)
-echo "Found interface ${LANIF}"
+echo "$0: Using network interface ${LANIF}"
 
 sed  's/eth0/'${LANIF}'/g' < conky-osl.conf > conky-osl-fixedlan.conf
 RC=$?
