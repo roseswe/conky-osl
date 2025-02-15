@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# @(#) $Id: chg_lan.sh,v 1.3 2024/03/09 09:23:52 ralph Exp $
+# @(#) $Id: chg_lan.sh,v 1.4 2025/02/11 07:12:16 ralph Exp $
 # -------------------------------------------------------------------------
-# $Header: /home/cvs/src/unix/conky-osl/chg_lan.sh,v 1.3 2024/03/09 09:23:52 ralph Exp $
+# $Header: /home/cvs/src/unix/conky-osl/chg_lan.sh,v 1.4 2025/02/11 07:12:16 ralph Exp $
 # vim:ts=8:sw=4:sts=4
 # coding: utf-8 -*- http://rose.rult.at/ - (c) by Ralph Roth, ROSE SWE
 # -------------------------------------------------------------------------

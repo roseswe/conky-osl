@@ -18,6 +18,10 @@ The Conky configuration file ´conky-osl.conf´ was developed and adapted specif
 
 This configuration file is designed for use with one or two monitors and various GNOME extensions. It is specifically designed for use with dark background images or backgrounds.
 
+## Requirements
+
+You need `lsof` and `gawk` (version 4.x or 5.x, not mawk!) installed. lm-sensors is a plus 
+
 ## Setup/Installation
 
     cp conky-osl.conf ~/.conkyrc                        ## old style
@@ -84,6 +88,9 @@ All tested conky versions so far tested on the following platforms
     conky-1.18.3 (i686)
     # ZorinOS 17.1/ZorinOS 17.2
     conky-1.12.2-1
+
+    # Pop!OS 24.04 LTS
+    conky-1.19.6        ## works, but conky window is visible and can/must be moved each time...
 
 ## Todo/Open/Fixme/Issues
 
@@ -161,4 +168,4 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.29 2025/02/08 00:02:43 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.30 2025/02/15 13:08:58 ralph Exp $ ==>>
