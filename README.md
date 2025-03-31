@@ -20,7 +20,7 @@ This configuration file is designed for use with one or two monitors and various
 
 ## Requirements
 
-You need `lsof` and `gawk` (version 4.x or 5.x, not mawk!) installed. lm-sensors is a plus 
+You need `lsof` and `gawk` (version 4.x or 5.x, not mawk!) installed. lm-sensors is a plus
 
 ## Setup/Installation
 
@@ -77,9 +77,9 @@ All tested conky versions so far tested on the following platforms
     conky-1.13.1-150400.11.pm.1.x86_64
     # openSUSE Leap 15.5
     conky-1.11.5-1.20.x86_64
-    # openSUSE Tumbleweed/Slowroll
-    TW: conky-1.13.1-3.2.x86_64  (06/2023)
-    15.6: 1.13.1-150600.11.pm.8
+    # openSUSE Tumbleweed/Leap/Slowroll
+    TW: conky-1.13.1-3.2.x86_64  (06/2023)  conky-1.21.7-1.2.x86_64 (02/25)
+    Leap: 15.6: 1.13.1-150600.11.pm.8
     SR: conky-1.21.7-1.2.x86_64 (02/25)
 
     $ dpkg -l conky|grep conky
@@ -96,6 +96,12 @@ All tested conky versions so far tested on the following platforms
 
 - warning: `conky' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
 - VMs may not display the CPU core temperature at all
+- lsof does not show open TCP/UDP ports at all with a network bridge (see issue #3)
+- Pop-OS 24.04 - shows conky output in a dedicated window
+
+## Fonts
+
+Not used yet: https://github.com/googlefonts/noto-emoji/releases
 
 ## Color Gradients
 Here's a list of color gradients suitable for dark backgrounds, with hex codes:
@@ -168,4 +174,4 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.30 2025/02/15 13:08:58 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.33 2025/03/31 06:59:41 ralph Exp $ ==>>
