@@ -66,32 +66,32 @@ All tested conky versions so far tested on the following platforms
 
     $ rpm -q conky
 
-    # openSUSE Leap 15.1
+    # ✅openSUSE Leap 15.1
     conky-1.11.6-pm151.8.17.x86_64, conky-1.11.6-pm151.8.22.x86_64,
     conky-1.11.6-pm151.8.27.x86_64, conky-1.11.6-pm151.8.37.x86_64
-    # openSUSE Leap 15.2
+    # ✅openSUSE Leap 15.2
     conky-1.11.5-1.20.x86_64
-    # openSUSE Leap 15.3, 15.4 and SLES 15.3/SLES-for-SAP Application 15.3
+    # ✅openSUSE Leap 15.3, 15.4 and SLES 15.3/SLES-for-SAP Application 15.3
     conky-1.11.5-1.20.x86_64
     conky-1.13.1-150400.10.pm.22.x86_64 (Pakman), conky-1.13.1-150400.10.pm.28.x86_64, conky-1.13.1-150400.10.pm.31.x86_64, conky-1.13.1-150400.10.pm.32.x86_64 (Pakman)
     conky-1.13.1-150400.11.pm.1.x86_64
     # openSUSE Leap 15.5/15.6
     ✅/❌ conky-1.11.5-1.20.x86_64   (openSUSE 15.6)
-    ❌ conky-1.21.7-150600.9.pm.1 (packman)
+    ❌ conky-1.21.7-150600.9.pm.1 (packman), conky-1.22.2-150600.8.pm.2.x86_64  (slow startup)
     # openSUSE Tumbleweed/Leap/Slowroll
-    TW: conky-1.13.1-3.2.x86_64  (06/2023)  conky-1.21.7-1.2.x86_64 (02/25)
+    TW: ✅conky-1.13.1-3.2.x86_64  (06/2023)  ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1.x86_64 (08/25)
     Leap: 15.6: 1.13.1-150600.11.pm.8
-    SR: conky-1.21.7-1.2.x86_64 (02/25)
+    SR: ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1 (09/25)
 
     $ dpkg -l conky|grep conky
 
-    # Debian 12.0-12.5/12.9, LXDE Desktop
-    conky-1.18.3 (i686)
-    # ZorinOS 17.1/ZorinOS 17.2
-    conky-1.12.2-1
+    # Debian 12.0-12.5/12.9/12.11, LXDE Desktop
+    ✅conky-1.18.3 (i686)
+    # ZorinOS 17.1/ZorinOS 17.2/17.3
+    ✅conky-1.12.2-1
 
     # Pop!OS 24.04 LTS
-    conky-1.19.6        ## works, but conky window is visible and can/must be moved each time...
+    ✅/❌ conky-1.19.6        ## works, but conky window is visible and can/must be moved each time...
 
 ## Todo/Open/Fixme/Issues
 
@@ -175,4 +175,4 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.35 2025/07/15 06:53:15 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.38 2025/09/26 18:56:09 ralph Exp $ ==>>
