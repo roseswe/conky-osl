@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+# Wayland fix?
+Exec=sh -c 'sleep 15 && conky --daemonize --pause=1'
+StartupNotify=false
+Terminal=false
+Icon=conky-logomark-violet
+Categories=System;Monitor;

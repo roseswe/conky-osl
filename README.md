@@ -49,6 +49,21 @@ Make sure you have the correct font installed. See `font = 'DejaVu Sans Mono:siz
 
 GNOME Desktop:  Start Application "Tweaks" - select "Startup Applications" - click "+" sign and select conky from the list (must be running)
 
+### GNOME Autostart Example File
+
+```
+ralph@slowroll ~/.config/autostart $ cat conky.desktop
+[Desktop Entry]
+Type=Application
+Name=conky
+# Wayland fix?
+Exec=sh -c 'sleep 15 && conky --daemonize --pause=1'
+StartupNotify=false
+Terminal=false
+Icon=conky-logomark-violet
+Categories=System;Monitor;
+```
+
 ## Example Screenshots
 
 ![Example Screenshot 1, GNOME Desktop](https://raw.githubusercontent.com/roseswe/conky-osl/master/ExampleZorinOS172.jpg "GNOME/ZorinOS Desktop Example (Dark Background)")
@@ -80,8 +95,9 @@ All tested conky versions so far tested on the following platforms
     ❌ conky-1.21.7-150600.9.pm.1 (packman), conky-1.22.2-150600.8.pm.2.x86_64  (slow startup)
     # openSUSE Tumbleweed/Leap/Slowroll
     TW: ✅conky-1.13.1-3.2.x86_64  (06/2023)  ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1.x86_64 (08/25)
-    Leap: 15.6: 1.13.1-150600.11.pm.8
     SR: ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1 (09/25)
+    ✅Leap 15.6: 1.13.1-150600.11.pm.8
+    ✅Leap 16.0: conky-1.13.1-bp160.1.3.x86_64
 
     $ dpkg -l conky|grep conky
 
@@ -175,4 +191,4 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.38 2025/09/26 18:56:09 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.40 2026/01/23 16:27:43 ralph Exp $ ==>>
