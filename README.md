@@ -100,11 +100,14 @@ All tested conky versions so far tested on the following platforms
     ✅Leap 16.0: conky-1.13.1-bp160.1.3.x86_64
 
     $ dpkg -l conky|grep conky
+    $ dpkg -l conky-std|grep conky      # ZorinOS 18
 
     # Debian 12.0-12.5/12.9/12.11, LXDE Desktop
     ✅conky-1.18.3 (i686)
     # ZorinOS 17.1/ZorinOS 17.2/17.3
     ✅conky-1.12.2-1
+    # ZorinOS 18.0
+    ✅1.19.6-1build3
 
     # Pop!OS 24.04 LTS
     ✅/❌ conky-1.19.6        ## works, but conky window is visible and can/must be moved each time...
@@ -191,4 +194,4 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.40 2026/01/23 16:27:43 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.42 2026/02/26 16:21:56 ralph Exp $ ==>>

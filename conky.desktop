@@ -7,3 +7,5 @@ StartupNotify=false
 Terminal=false
 Icon=conky-logomark-violet
 Categories=System;Monitor;
+## not sure about this
+X-GNOME-Autostart-Delay=60
