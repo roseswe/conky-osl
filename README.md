@@ -106,8 +106,9 @@ All tested conky versions so far tested on the following platforms
     ✅conky-1.18.3 (i686)
     # ZorinOS 17.1/ZorinOS 17.2/17.3
     ✅conky-1.12.2-1
-    # ZorinOS 18.0
-    ✅1.19.6-1build3
+    # ZorinOS 18.0/18.1
+    ✅conky/now 1.12.2-1
+    ✅conky-all/noble 1.19.6-1build3
 
     # Pop!OS 24.04 LTS
     ✅/❌ conky-1.19.6        ## works, but conky window is visible and can/must be moved each time...
