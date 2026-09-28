@@ -10,6 +10,8 @@ This gives you a pre-configured setup for Conky to monitor and display various s
 
 Requires (g)awk and lsof installed, which is installed by default on all tested systems.
 
+If you use this program, a star on github helps a lot <3
+
 ## A versatile Conky configuration file for openSUSE, SLES and Debian
 
 The Conky configuration file ´conky-osl.conf´ was developed and adapted specifically for running Conky on openSUSE Leap 15.x, openSUSE Tumbleweed and SLES under the GNOME and KDE desktop managers. However, it has not yet been tested under other Linux distributions or desktop environments other than those mentioned below. The configuration file was written by Ralph Roth, ROSE SWE, http://rose.rult.at/ and is subject to his copyright.
@@ -44,6 +46,11 @@ The network statistics are currently hard coded (eth0). So if you have an other 
 ## Running Conky
 
 Make sure you have the correct font installed. See `font = 'DejaVu Sans Mono:size=8',`
+
+    $ fc-match monospace
+    DejaVuSansMono.ttf: "DejaVu Sans Mono" "Book"
+
+Start conky with
 
     nohup conky -c ~/.conkyrc &                         ## old style
 
@@ -95,7 +102,7 @@ All tested conky versions so far tested on the following platforms
     ❌ conky-1.21.7-150600.9.pm.1 (packman), conky-1.22.2-150600.8.pm.2.x86_64  (slow startup)
     # openSUSE Tumbleweed/Leap/Slowroll
     TW: ✅conky-1.13.1-3.2.x86_64  (06/2023)  ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1.x86_64 (08/25)
-    SR: ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1 (09/25)
+    SR: ✅conky-1.21.7-1.2.x86_64 (02/25), ✅conky-1.22.2-1.1 (09/25)  ✅conky-1.24.0-1699.8.pm.3.x86_64+conky-1.24.2-1699.8.pm.1.x86_64
     ✅Leap 15.6: 1.13.1-150600.11.pm.8
     ✅Leap 16.0: conky-1.13.1-bp160.1.3.x86_64
 
@@ -195,4 +202,24 @@ Here's a list of 10 default colors for Conky that lean more towards white, while
 
 These colors are closer to white but still have slight tints that can add a subtle, pleasing effect to your Conky display. They should provide excellent readability on dark backgrounds.
 
-<!==> $Id: README.md,v 1.42 2026/02/26 16:21:56 ralph Exp $ ==>>
+<!==> $Id: README.md,v 1.47 2026/09/28 13:39:55 ralph Exp $ ==>>
+
+
+### TODO
+
+$ [2026-08-17 12:58:05.666] [warn ] [src/lua/setting.cc:215] 'own_window_transparent' is deprecated and will be removed in a future release: Use own_window_colour with alpha instead (e.g. '#00000000').
+[2026-08-17 12:58:05.668] [info ] [src/output/x11.cc:677] window type - dock
+[2026-08-17 12:58:05.669] [info ] [src/output/x11.cc:804] drawing to created window 0x1800002
+[2026-08-17 12:58:05.670] [info ] [src/lua/x11-settings.cc:67] drawing to double buffer
+[2026-08-17 12:58:05.670] [warn ] [src/lua/setting.cc:74] setting 'own_window_argb_visual' has been removed: ARGB is now always enabled when available. Control opacity with `own_window_colour` (e.g. '#8000').
+[2026-08-17 12:58:05.671] [warn ] [src/core.cc:442] invalid CPU number '(null)', falling back to CPU 1
+[2026-08-17 12:58:05.691] [info ] [src/conky.cc:1877] 'GNOME' wayland session running
+
+[2026-08-17 13:07:16.159] [info ] [src/conky.cc:2006] '/home/ralph/.config/conky/conky.conf' modified, reloading
+[2026-08-17 13:07:17.164] [warn ] [src/lua/setting.cc:215] 'own_window_transparent' is deprecated and will be removed in a future release: Use own_window_colour with alpha instead (e.g. '#00000000').
+[2026-08-17 13:07:17.173] [info ] [src/output/x11.cc:677] window type - dock
+[2026-08-17 13:07:17.173] [info ] [src/output/x11.cc:804] drawing to created window 0x1800002
+[2026-08-17 13:07:17.174] [info ] [src/lua/x11-settings.cc:67] drawing to double buffer
+[2026-08-17 13:07:17.174] [warn ] [src/lua/setting.cc:74] setting 'own_window_argb_visual' has been removed: ARGB is now always enabled when available. Control opacity with `own_window_colour` (e.g. '#8000').
+[2026-08-17 13:07:17.175] [warn ] [src/core.cc:442] invalid CPU number '(null)', falling back to CPU 1
+
